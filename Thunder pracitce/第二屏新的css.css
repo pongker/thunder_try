@@ -1,0 +1,103 @@
+.box-show{
+    display: none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    list-style-type: none;
+}
+.cb-bg{
+    position:absolute;
+    width:1366px;
+    height: 768px;
+    top:50%;
+    left:50%;
+    margin:-384px 0 0 -683px;
+}
+.cb2-bg img{
+    width:1366px;
+    height:768px;
+}
+.txt_show1{
+    position: relative;
+    margin-top:100px;
+}
+.txt_show1 .ts_a{
+    position: relative;
+    height:50px;
+    line-height:50px;
+    font-size:48px;
+    color:#fff;
+    display: inline-block;
+    padding-right:28px;
+    transition:all 0.5s;
+}
+.txt_show1 .little_img{
+    background:url("images/ic_spr24.png") no-repeat top left;
+    display: inline-block;
+    position: absolute;
+    right:0;
+    top:50%;
+    margin-top:-12px;
+    width:13px;
+    height:24px;
+}
+.txt_show2{
+    width:759px;
+    height:101px;
+    display: block;
+    background:url("images/carousel_txt.png") no-repeat top left;
+    margin:10px auto 0;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.btn_down{
+    display: inline-block;
+    margin-top:10px;
+    font-size:22px;
+    color:#fff;
+    padding:7px 45px;
+    transition:all 0.3s;
+    border:1px solid rgba(255,255,255,0.5);
+}
+.txt_show3{
+    display: block;
+    margin-top:10px;
+    font-size:22px;
+    line-height:22px;
+    color:white;
+}
+.txt_show3 a{
+    display: inline-block;
+    position:relative;
+    top:6px;
+    width:23px;
+    height:24px;
+    margin-right:10px;
+    background:url("images/ic_spr24.png") no-repeat -18px 0;
+    transition:top 0.3s;
+    border:1px solid red;
+}
+.txt_show1 .ts_a:hover{
+    top:1px;
+}
+@keyframes lemove {
+    0%{right:0}
+    25%{right:-8px;}
+    50%{right:0}
+    75%{right:-2px;}
+    100%{right:0}
+}
+.txt_show1 .ts_a:hover .little_img{
+    animation:lemove 0.4s 0.4s linear;
+}
+.btn_down:hover{
+    background:rgba(255,255,255,0.3);
+}
+.txt_show3 a:hover{
+    top:3px;
+}
+.txt_show3 a:hover,.txt_show3 a.zaned{
+    background:url("images/ic_spr24.png") no-repeat -200px 0;
+}
+

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="thunder2.css">
+    <script src="thunder_first.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <a id="logo" href="./" title="迅雷网络">
+            <img src="images/logo.png">
+        </a>
+        <ul id="aside-bar">
+            <li id="aside-bar-li">
+            <!--<div id="visual-part">-->
+                <a id="visual-part" href="#">
+                    <i id="little_img1"></i>
+                    更多</a>
+            <!--</div>-->
+                <div id="unvisual-part">
+                    <ul id="unvisual-part-ul">
+                        <li> <a href="http://vip.xunlei.com" target="_blank">迅雷会员</a></li>
+                        <li> <a href="http://niu.xunlei.com" target="_blank">牛X页游</a></li>
+                        <li> <a href="https://www.xycdn.com" target="_blank">星域CDN</a></li>
+                        <li> <a href="http://www.xunlei.com/introduction.html" target="_blank">关于迅雷</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <div id="wrap">
+        <!--第一屏-->
+    <div id="change-back-1">
+        <div id="back_bg">
+            <img src="http://img.vip.kanimg.com/img/banner/201703011020173137.jpg">
+        </div>
+        <!--动画后边放一张图是不是为了给动画加载提供时间啊-->
+        <div id="first-play-animation">
+            <video src="http://img.vip.kanimg.com/img/banner/201702241034284066.mp4" loop="loop" autoplay></video>
+        </div>
+        <div id="back-1-content">
+            <div id="cell-content">
+                <p>技术·共享·娱乐</p>
+            </div>
+        </div>
+        <!--<div id="below-button-d">-->
+            <a href="javascript:;" id="below-btn"></a>
+        <!--</div>-->
+    </div>
+        <!--第二屏-->
+    <div id="change-back-2">
+<ul id="cb2-ul">
+    <li id="windows_show" class="box-show">
+        <div id="cb2-bg1" class="cb2-bg">
+            <img src="images/201702151453082348.jpg" >
+        </div>
+        <div class="tb_box">
+        <div id="cb2-content1" class="tb_content">
+            <p class="txt_show1">
+                <a class="ts_a" target="_blank" href="http://xl9.xunlei.com">
+                    迅雷9<i class="little_img"></i>
+                </a>
+            </p>
+            <p class="txt_show2">精彩，一下就有</p>
+            <a href="http://down.sandai.net/thunder9/Thunder9.1.30.714.exe" class="btn_down">立即下载</a>
+            <p class="txt_show3"><a class="txt_zan" href="javascript:;"></a>1027人赞过</p>
+        </div>
+        </div>
+    </li>
+    <li id="mac_show" class="box-show">
+        <div id="cb2-bg2" class="cb2-bg">
+            <img src="images/201702151452533692.jpg">
+        </div>
+        <div class="tb_box">
+        <div id="cb2-content2" class="tb_content">
+            <p class="txt_show1">
+                <a class="ts_a" target="_blank" href="http://mac.xunlei.com/">
+                迅雷Mac<i class="little_img"></i>
+                </a>
+            </p>
+            <p class="txt_show2">轻体验，大改变</p>
+            <a href="http://down.sandai.net/mac/thunder_3.0.7.2812.dmg" class="btn_down">立即下载</a>
+            <p class="txt_show3"><a class="txt_zan" href="javascript:;"></a>2500人赞过</p>
+        </div>
+        </div>
+    </li>
+    <li id="android_show" class="box-show">
+        <div id="cb2-bg3" class="cb2-bg">
+            <img src="images/201702151452362548.jpg">
+        </div>
+        <div class="tb_box">
+            <div id="cb2-content3" class="tb_content">
+            <p class="txt_show1">
+                <a class="ts_a" href="http://mobile.xunlei.com/" target="_blank">
+                迅雷Android<i class="little_img"></i>
+                </a>
+            </p>
+            <p class="txt_show2">超有料，不寂寞</p>
+            <a href="javascript:;" class="btn_down">立即下载</a>
+            <p class="txt_show3"><a class="txt_zan" href="javascript:;"></a>11987人赞过</p>
+            </div>
+        </div>
+    </li>
+    <li id="ios_show" class="box-show">
+        <div id="cb2-bg4" class="cb2-bg">
+            <img src="images/201702151451211820.jpg">
+        </div>
+        <div class="tb_box">
+            <div id="cb2-content4" class="tb_content">
+            <p class="txt_show1">
+                <a href="" target="_blank" class="ts_a">
+                    迅雷iOS<i class="little_img"></i>
+                </a>
+            </p>
+            <p class="txt_show2">发现奇趣，悦享时光</p>
+            <a href="javascript:;" class="btn_down">立即下载</a>
+            <p class="txt_show3"><a class="txt_zan" href="javascript:;"></a>973人赞过</p>
+            </div>
+        </div>
+    </li>
+</ul>
+    <div id="full_width_div">
+    <div id="screen-control">
+    <a href="javascript:;" id="windows_control" class="scl" title="Windows版本">
+        <i class="little_imgg"></i>
+    </a>
+    <a href="javascript:;" id="Mac_control"  class="scl"  title="Mac版本">
+        <i class="little_imgg"></i>
+    </a>
+    <a href="javascript:;" id="Android_control"  class="scl"  title="Android版本">
+        <i class="little_imgg"></i>
+    </a>
+    <a href="javascript:;" id="Apple_control"  class="scl"  title="IOS版本">
+        <i class="little_imgg"></i>
+    </a>
+    </div>
+    </div>
+</div>
+        <!--第三屏-->
+    <div id="change-back-3">
+        <div id="Thunder_media"  class="thunder-box">
+            <div id="Thunder_media_real">
+                <div id="Tm-img-box">
+                    <img src="images/201702151455491382.jpg">
+                </div>
+                <div class="tb_box">
+                <div id="Tm-content" class="tb_content">
+                    <div class="product-logo">
+                        <i id="Tm-product-logo"></i>
+                    </div>
+                    <p class="product-txt">迅雷影音
+                        <i id="Tmp-little-img" class="lattle-img"></i>
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div id="Thunder_media_hover" class="thunder-box-hover">
+                <div class="tb_box">
+                    <div id="Tmh-content" class="tb_content">
+                        <p class="Thunder_txt1">
+                            <a id="Thunder_txt1_a" class="thunder-p-a" href="http://video.xunlei.com/pc.html" target="_blank">迅雷影音
+                                <i class="little_img"></i>
+                            </a>
+                        </p>
+                        <p class="Thunder_txt2">聚合全网影片，专业全能播放</p>
+                        <a href="http://xmp.down.sandai.net/xmp/XMPSetup_5.2.17.5841-dl.exe" id="Tmh_btn" class="btn_down"> 立即下载</a>
+                        <p class="Thunder_txt3"><a class="txt_zan" href="javascript:;"></a>900人赞过</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Thunder_gamebox"  class="thunder-box">
+            <div id="Thunder_gamebox_real">
+                    <div id="Tg-img-box">
+                        <img src="images/201702151456507998.jpg">
+                    </div>
+                    <div class="tb_box">
+                        <div class="tb_content" id="Tg-content">
+                            <div class="product-logo">
+                                <i id="Tg-product-logo"></i>
+                            </div>
+                            <p class="product-txt">迅雷游戏盒子
+                                <i id="Tgp-little-img" class="lattle-img"></i>
+                            </p>
+                        </div>
+                    </div>
+            </div>
+            <div id="Thunder_gamebox_hover" class="thunder-box-hover">
+                <div class="tb_box">
+                    <div class="tb_content" id="Tgh-content">
+                        <p class="Thunder_txt1">
+                            <a id="Thunderg_txt1_a" class="thunder-p-a" href="http://gamebox.niu.xunlei.com/" target="_blank">
+                            迅雷游戏盒子<i class="little_img"></i>
+                            </a>
+                        </p>
+                        <p class="Thunder_txt2">汇聚全网火爆游戏的平台</p>
+                        <a href="http://down.sandai.net/xlgamebox/XLGameBox4.3.1.0029_xlgw.exe" target="_blank" id="Tgh_btn" class="btn_down">
+                            立即下载</a>
+                        <p class="Thunder_txt3"><a class="txt_zan" href="javascript:;"></a>368人赞过</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Thunder_netspeed"  class="thunder-box">
+            <div id="Thunder_netspeed-real">
+                <div id="Tn-img-box">
+                    <img src="images/201702151457085647.jpg">
+                </div>
+                <div class="tb_box">
+                    <div class="tb_content" id="Tn-content">
+                        <div class="product-logo">
+                            <i id="Tn-product-logo"></i>
+                        </div>
+                        <p class="product-txt">迅雷网游加速器
+                            <i id="Tnp-little-img" class="lattle-img"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="Thunder_netspeed_hover" class="thunder-box-hover">
+                <div class="tb_box">
+                    <div class="tb_content" id="Tnh-content">
+                        <p class="Thunder_txt1">
+                            <a id="Thundern_txt1_a" class="thunder-p-a" href="http://jsq.xunlei.com/" target="_blank">
+                                迅雷网游加速器<i class="little_img"></i>
+                            </a>
+                        </p>
+                        <p class="Thunder_txt2">集合迅雷下载技术，为游戏加速而生</p>
+                        <a href="http://down.sandai.net/xljiasu/XlaccSetup3.17.0.9122_jsqgw.exe" target="_blank" class="btn_down" id="Tnh_btn"> 立即下载</a>
+                        <p class="Thunder_txt3"><a href="javascript:;" class="txt_zan" ></a>427人赞过</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Thunder_upspeed"  class="thunder-box">
+            <div id="Thunder_upspeed_real">
+                <div id="Tu-img-box">
+                    <img src="images/201702151456207693.jpg">
+                </div>
+                <div class="tb_box">
+                    <div class="tb_content" id="Tu-content">
+                        <div class="product-logo">
+                            <i id="Tu-product-logo"></i>
+                        </div>
+                        <p class="product-txt">迅雷上行加速
+                            <i id="Tup-little-img" class="lattle-img"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="Thunder_upspeed_hover" class="thunder-box-hover">
+                <div class="tb_box">
+                    <div class="tb_content" id="Tuh-content">
+                        <p class="Thunder_txt1">
+                            <a id="Thunderu_txt1_a" class="thunder-p-a" target="_blank" href="http://act.vip.xunlei.com/vip/2016/ssts/">
+                            迅雷上行加速
+                            <i class="little_img"></i>
+                            </a>
+                        </p>
+                        <p class="Thunder_txt2">突破物理上行极限，提升全网上传速度</p>
+                        <a href="#" class="btn_down" id="Tuh_btn"> 立即下载</a>
+                        <p class="Thunder_txt3"><a href="javascript:;" class="txt_zan"></a>427人赞过</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--第四屏-->
+    <div id="change-back-4">
+            <div id="Thunder_sbird" class="thunder-box">
+                <div id="Thunder_sbird_real">
+                    <div id="Ts-img-box">
+                        <img src="images/201702151505176817.jpg">
+                    </div>
+                    <div class="tb_box">
+                        <div class="tb_content" id="Ts_content">
+                            <div class="product-logo">
+                                <i id="Ts-product-logo"></i>
+                            </div>
+                            <div class="product-txt">
+                                <p>迅雷快鸟
+                                    <i id="Tsp-little-img1"></i>
+                                    <i id="Tsp-little-img2"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Thunder_sbird_hover" class="thunder-box-hover">
+                    <div class="tb_box">
+                        <div class="tb_content">
+                            <p class="Thunder_txt1">
+                                <a target="_blank" href="http://k.xunlei.com/" id="Thunders_txt1_a" class="thunder-p-a">迅雷快鸟
+                                    <i class="little_img"></i>
+                                </a>
+                            </p>
+                            <p class="Thunder_txt2" id="Tsh-p2">迅雷快鸟宽带提速联合中国电信、中国联通致力于帮助用户解决带宽低、网速慢、上网体验差问题，
+                                提升物理宽带实现全网加速</p>
+                            <a href="http://down.sandai.net/XLNetAcc/XLNetAccSetup.exe" class="btn_down" id="Tsh_btn1"> PC端下载</a>
+                            <p></p>
+                            <a href="javascript:;" class="btn_down" id="Tsh_btn2"> 移动端下载</a>
+                            <p class="Thunder_txt3">
+                                <a class="txt_zan" href="javascript:;"></a>
+                                398人赞过
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Thunder_jiuwo" class="thunder-box">
+                <div id="Thunder_jiuwo_real">
+                    <div id="Tj-img-box">
+                        <img src="images/201703011021293427.jpg">
+                    </div>
+                    <div class="tb_box">
+                        <div class="tb_content" id="Tj_content">
+                            <div class="product-logo">
+                                <i id="Tj-product-logo"></i>
+                            </div>
+                            <div class="product-txt">
+                                <p>酒窝直播
+                                    <i id="Tjp-little-img"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Thunder_jiuwo_hover" class="thunder-box-hover">
+                    <div class="tb_box">
+                        <div class="tb_content">
+                            <p class="Thunder_txt1">
+                                <a href="http://jiuwo.xunlei.com/" id="Thunderj_txt1_a" class="thunder-p-a" target="_blank">
+                                    酒窝直播<i class="little_img"></i>
+                                </a>
+                            </p>
+                            <p class="Thunder_txt2">美女互动直播平台</p>
+                            <a href="javascript:;" class="btn_down" target="_blank"> 立即下载</a>
+                            <p class="Thunder_txt3">
+                                <a class="txt_zan" href="javascript:;"></a>
+                                402人赞过
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Thunder_hummer" class="thunder-box">
+                <div id="Thunder_hummer_real">
+                    <div id="Th-img-box">
+                        <img src="images/201702151504372411.jpg">
+                    </div>
+                    <div class="tb_box">
+                        <div class="tb_content" id="Th_content">
+                            <div class="product-logo">
+                                <i id="Th-product-logo"></i>
+                            </div>
+                            <div class="product-txt">
+                                <p>蜂鸟金融
+                                    <i id="Thp-little-img"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Thunder_hummer_hover" class="thunder-box-hover">
+                    <div class="tb_box">
+                        <div class="tb_content">
+                            <p class="Thunder_txt1">
+                                <a href="https://www.fengniaojr.com/" class="thunder-p-a" target="_blank">蜂鸟金融
+                                    <i class="little_img"></i>
+                                </a>
+                            </p>
+                            <p class="Thunder_txt2">迅雷官方理财平台，历史兑付率100%</p>
+                            <a href="javascript:;" class="btn_down" target="_blank"> 立即下载</a>
+                            <p class="Thunder_txt3">
+                                <a class="txt_zan" href="javascript:;"></a>
+                                352人赞过
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="Thunder_deal" class="thunder-box">
+                <div id="Thunder_deal_real">
+                    <div id="Td-img-box">
+                        <img src="images/201702151501433701.jpg">
+                    </div>
+                    <div class="tb_box">
+                        <div class="tb_content" id="Td_content">
+                            <div class="product-logo">
+                                <i id="Td-product-logo"></i>
+                            </div>
+                            <div class="product-txt">
+                                <p>迅雷爱交易
+                                    <i id="Tdp-little-img"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Thunder_deal_hover" class="thunder-box-hover">
+                    <div class="tb_box">
+                        <div class="tb_content">
+                            <p class="Thunder_txt1">
+                                <a href="http://weitrades.com/index.htm" target="_blank" id="Thunderd_txt1_a" class="thunder-p-a">
+                                    迅雷爱交易<i class="little_img"></i>
+                                </a>
+                            </p>
+                            <p class="Thunder_txt2">互联网贵金属交易，首单免费让你赚</p>
+                            <a href="javascript:;" class="btn_down" target="_blank"> 立即下载</a>
+                            <p class="Thunder_txt3"><a href="javascript:;" class="txt_zan"></a>367人赞过</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+        <!--第五屏-->
+    <div id="change-back-5">
+        <div id="Thunder_downbao">
+            <div id="Tdo-img-box">
+                <img src="images/201702151506312041.jpg">
+            </div>
+            <div id="Tdo_content">
+                <div class="tb_box">
+                    <div class="tb_content">
+                        <p id="Td_name">
+                            <a href="http://xzb.xunlei.com/?referfrom=v_web_xlgw" target="_blank">
+                                下载宝<i class="little_img"></i>
+                            </a>
+                        </p>
+                        <p id="Td_price">159元</p>
+                        <p id="Td_details">为所有智能终端无限扩展容量，
+                            无需电脑和数据线实现<br>
+                            数据共享，打造私人专属云盘。</p>
+                        <a id="Td_btn" target="_blank" href="http://xzb.xunlei.com/?referfrom=v_web_xlgw">立即购买</a>
+                        <p id="Td_zan"><a href="javascript:;" class="txt_zan"></a>484人赞过</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="thelast_control">
+            <ul id="friend_ref">
+                <li id="weixin">
+                    <a href="javascript:;" id="weixin_a" class="fri_message no">
+                        <span class="code-box">
+                            <i class="ic_arr"></i>
+                            <img src="images/code.jpg" alt="官方微信">
+                        </span>
+                    </a>
+                </li>
+                <li id="weibo" ><a class="fri_message" target="_blank" href="http://weibo.com/xunleigf?from=myfollow_all&amp;is_all=1"></a></li>
+                <li id="luntan"><a  class="fri_message" target="_blank" href="http://bbs.xunlei.com/forum.php"></a></li>
+                <li id="tieba"><a class="fri_message" target="_blank" href="http://tieba.baidu.com/f?ie=utf-8&amp;kw=迅雷&amp;fr=search"></a></li>
+                <li id="yang"><a class="fri_message" target="_blank" href="http://yangtai.xunlei.com/"></a></li>
+            </ul>
+            <ul id="Thunder_aboutus">
+                <li><a target="_blank" href="http://hr.xunlei.com/">加入迅雷</a></li>
+                <li><span>|</span></li>
+                <li><a target="_blank" id="speciala" href="http://www.xunlei.com/introduction.html">关于迅雷</a></li>
+                <li><span>|</span></li>
+                <li><a target="_blank" href="http://www.xunlei.com/contact.html">联系我们</a></li>
+                <li><span>|</span></li>
+                <li><a target="_blank" href="http://help.xunlei.com/">客服中心</a></li>
+                <li><span>|</span></li>
+                <li><a target="_blank" href="http://www.xunlei.com/newscenter.html">新闻中心</a></li>
+                <li><span>|</span></li>
+                <li><a target="_blank" href="http://ir.xunlei.com/">Investor Relations</a></li>
+            </ul>
+            <div id="law_part">
+                <ul>
+                    <li><a href="http://www.xunlei.com/images/zzdx.jpg">增值电信业务粤B2-20050219号</a></li>
+                    <li><span>|</span></li>
+                    <li><a id="whycolor" href="http://www.xunlei.com/images/wlwh.jpg">粤网文[2017]0901-125号</a></li>
+                    <li><span>|</span></li>
+                    <li><a id="whycolor" href="http://www.xunlei.com/images/yp.jpg">互联网药品证书</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="http://www.xunlei.com/images/cbxkz.jpg">互联网出版(粤)字053号</a></li>
+                </ul>
+                <p>违法信息举报热线电话0755-86319951&nbsp;&nbsp;&nbsp; Copyright? 2003-2017 XUNLEICOM ALL Rights Reserved</p>
+                <a class="lp-a" href="http://www.szga.gov.cn/" target="_blank"><img src="images/safe_1.png">
+                        深圳网络警察报警平台</a>
+                <a class="lp-a" href="http://www.szga.gov.cn/SZGA_Scene/641/1514/#currState=2" target="_blank"><img src="images/safe_2.png">
+                    公共信息安全网络监察</a>
+                <a class="lp-a" href="https://www.szcredit.org.cn/web/gspt/newGSPTDetail.aspx?ID=6a5928370dfc49fc9d81e4088f6e614f&amp;tabPro=11&amp;code=1" target="_blank"><img src="images/safe_3.png">
+                    经营性网络备案信息</a>
+                <a class="lp-a" href="http://www.12377.cn" target="_blank"><img src="images/safe_4.png">
+                    不良信息<br>举报中心</a>
+            </div>
+        </div>
+    </div>
+        <!--边栏导航-->
+    <ul id="screen-change">
+            <li class="sc-li" ><a href="javascript:;" class="current"></a></li>
+            <li class="sc-li" ><a href="javascript:;"></a></li>
+            <li class="sc-li" ><a href="javascript:;"></a></li>
+            <li class="sc-li" ><a href="javascript:;"></a></li>
+            <li class="sc-li" ><a href="javascript:;"></a></li>
+    </ul>
+    <div id="suggestion">
+            <a href="javascript:;" class="btn-fb">意见<br>反馈</a>
+    </div>
+    <div id="feedback">
+        <div id="feedback_screen">
+            <div id="fs_titile">
+                <p id="fst_p">意见反馈</p>
+                <a href="javascript:;" id="fst_a" title="关闭"></a>
+            </div>
+            <div id="fs_cont">
+                <textarea id="fsc_t" placeholder="在这里描述您遇到的问题"></textarea>
+            </div>
+            <div id="fs_btn">
+                <a href="javascript:;" id="fsb_a" >提交</a>
+            </div>
+        </div>
+        <div id="fb_alert" style="display:none">
+            <p>您当日意见反馈次数已达上限，请明日再来</p>
+        </div>
+        <div id="feedback_success" style="display: none">
+            <div id="success_box">
+                <p id="sbx_p">
+                    <i id="sbxa_i"></i>
+                    意见反馈成功
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

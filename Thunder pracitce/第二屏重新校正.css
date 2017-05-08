@@ -1,0 +1,148 @@
+/*这里是windows_show的页面部分*//*这里是windows_show的页面部分*/
+#windows_show{
+    display: none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    list-style-type: none;
+}
+/*图像*/
+#windows_show #cb2-bg1{
+    position:absolute;
+    width:1366px;
+    height: 768px;
+    /*Center img*/
+    top:50%;
+    left:50%;
+    margin:-384px 0 0 -683px;
+}
+#windows_show #cb2-bg1 img{
+    /*对图片设定宽高使其完全显示*/
+    width:1366px;
+    height:768px;
+}
+/*文本*/
+#windows_show .tb_box{
+    position:absolute;
+    display: table;
+    padding-bottom:140px;
+    border:1px solid greenyellow;
+}
+#windows_show .tb_box #cb2-content1{
+    position:absolute;
+    width:100%;
+    /*z-index: 2;*/
+    text-align:center;
+    display: table-cell;
+    /*vertical-align: middle;*/
+    border:1px solid green;
+}
+/*第一行文本*//*第一行文本*/
+#windows_show #cb2-content1 .txt_show1{
+    /*这里有效果*/
+    position: relative;
+    margin-top:100px;
+    border:1px solid blue;
+}
+.txt_show1 .ts_a{
+    position: relative;
+    height:50px;
+    line-height:50px;
+    font-size:48px;
+    color:#fff;
+    display: inline-block;
+    padding-right:28px;
+    transition:all 0.5s;
+    /*vertical-align: middle;*/
+    border:1px solid red;
+}
+.txt_show1 .little_img{
+    background:url("images/ic_spr24.png") no-repeat top left;
+    display: inline-block;
+    position: absolute;
+    right:0;
+    top:50%;
+    margin-top:-12px;
+    width:13px;
+    height:24px;
+    border:1px solid red;
+}
+/*第二行文本*//*第二行文本*/
+#cb2-content1 .txt_show2{
+    width:759px;
+    height:101px;
+    display: block;
+    background:url("images/carousel_txt.png") no-repeat top left;
+    margin:10px auto 0;
+    /*文本隐藏*/
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    border:1px solid red;
+}
+/*下载按钮*/
+#cb2-content1 .btn_down{
+    display: inline-block;
+    margin-top:10px;
+    font-size:22px;
+    color:#fff;
+    padding:7px 45px;
+    transition:all 0.3s;
+    border:1px solid rgba(255,255,255,0.5);
+    /*这里有个hover效果*/
+}
+/*第三行文本*//*第三行文本*/
+#cb2-content1 .txt_show3{
+    display: block;
+    margin-top:10px;
+    font-size:22px;
+    line-height:22px;
+    color:white;
+    border:1px solid red;
+}
+#cb2-content1 .txt_show3 a{
+    display: inline-block;
+    /*vertical-align: middle;*/
+    /*这里用middle效果不太好*/
+    position:relative;
+    top:6px;
+    width:23px;
+    height:24px;
+    margin-right:10px;
+    background:url("images/ic_spr24.png") no-repeat -18px 0;
+    /*transition:transform 0.3s;*/
+    transition:top 0.3s;
+    border:1px solid red;
+}
+/*第二屏效果部分*//*第二屏效果部分*/
+/*第一行文字效果*/
+.txt_show1 .ts_a:hover{
+    top:1px;
+}
+@keyframes lemove {
+    0%{right:0}
+    25%{right:-8px;}
+    50%{right:0}
+    75%{right:-2px;}
+    100%{right:0}
+}
+.txt_show1 .ts_a:hover .little_img{
+    animation:lemove 0.4s 0.4s linear;
+}
+/*按钮效果*/
+#cb2-content1 .btn_down:hover{
+    background:rgba(255,255,255,0.3);
+}
+
+/*点赞效果*/
+/*a与a:hover一定要对等啊，优先级啊优先级*/
+#cb2-content1 .txt_show3 a:hover{
+    /*这个效果不好*/
+    /*transform:translateY(-3px);*/
+    /*-webkit-transform:translateY(-3px);*/
+    top:3px;
+}
+#cb2-content1 .txt_show3 a:hover,#cb2-content1 .txt_show3 a.zaned{
+    background:url("images/ic_spr24.png") no-repeat -200px 0;
+}
+/*这一点要把js写一下，当点击事件触发后，a的属性名添加一个zaned*/

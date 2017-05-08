@@ -1,0 +1,495 @@
+#change-back-3 {
+    /*display: none;*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+
+/*第一个模块儿*/
+#change-back-3 #Thunder_media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 66%;
+    height: 50%;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid red;
+}
+
+/*正面*/
+#Thunder_media #Thunder_media_real {
+    width: 100%;
+    height: 100%;
+}
+
+/*图片区*/
+#Thunder_media #Tm-img-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -192px 0 0 -451px;
+    width: 902px;
+    height: 384px;
+    border: 1px solid cyan;
+}
+
+#Thunder_media #Tm-img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+/*内容区*/
+#Thunder_media .tb_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1920px;
+    height: 1080px;
+    margin: -540px 0 0 -960px;
+    display: table;
+    border: 1px solid red;
+}
+
+#Thunder_media #Tm-content {
+    display: table-cell;
+    padding-bottom: 20px;
+    vertical-align: middle;
+    /*width:100%;*/
+    /*height:105px;*/
+    border: 1px solid green;
+    /*这个东西不显示边框，是不是table-cell的特性*/
+}
+
+#Tm-content .product-logo {
+    position: relative;
+    display: block;
+    height: 105px;
+    border: 1px solid red;
+}
+
+#Tm-content .product-logo #Tm-product-logo {
+    display: block;
+    background: url("images/product_logo.png") no-repeat 0 0;
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -31px 0 0 -31px;
+    border: 1px solid red;
+}
+
+#Tm-content .product-txt {
+    display: block;
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    /*margin:0 7px;*/
+    border: 1px solid blue;
+}
+
+.product-txt #Tmp-little-img {
+    background: url("images/ic_spr24.png") no-repeat -50px 0;
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    vertical-align: middle;
+    /*align the top of the box with the top of the parent element's font*/
+    /*vertical-align:text-top;*/
+    border: 1px solid yellow;
+}
+
+/*hover面*/
+#Thunder_media #Thunder_media_hover {
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    transition: all 0.3s;
+    /*background:rgba(0,0,0,0.7);*/
+    background: black;
+    border: 1px solid darkgreen;
+}
+
+#Thunder_media:hover #Thunder_media_hover {
+    left: 0;
+    opacity: 0.7;
+}
+
+#Thunder_media_hover .tb_box {
+    width: 1920px;
+    height: 1080px;
+    margin: -540px 0 0 -960px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    display: table;
+}
+
+.tb_box .tb_content {
+    display: table-cell;
+    /*padding-bottom:20px;*/
+    vertical-align: middle;
+}
+
+/*第一段文字*/
+/*为什么人家的间距这么大，也没见有margin啊*/
+/*这里有个效果*/
+#Thunder_media_hover .Thunder_txt1 {
+    position: relative;
+    display: block;
+    padding-bottom: 20px;
+    border: 1px solid red;
+}
+
+.Thunder_txt1 #Thunder_txt1_a {
+    display: inline-block;
+    position: relative;
+    padding-right: 25px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    height: 40px;
+    /*overflow: hidden;*/
+    border: 1px solid red;
+}
+
+#Thunder_txt1_a .little_img {
+    background: url("images/ic_spr24.png") no-repeat -106px 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 0;
+    width: 9px;
+    height: 17px;
+    border: 1px solid red;
+}
+
+#Thunder_media:hover #Tm-content {
+    display: none;
+}
+
+@keyframes lemove {
+    0% {
+        right: 0
+    }
+    25% {
+        right: -8px;
+    }
+    50% {
+        right: 0
+    }
+    75% {
+        right: -2px;
+    }
+    100% {
+        right: 0
+    }
+}
+
+.Thunder_txt1 #Thunder_txt1_a:hover .little_img {
+    animation: lemove 0.4s 0.4s linear;
+}
+
+/*第二段文字*/
+#Thunder_media_hover .Thunder_txt2 {
+    font-size: 22px;
+    color: white;
+    line-height: 38px;
+    margin: 20px;
+    border: 1px solid blue;
+}
+
+/*按钮*/
+#Thunder_media_hover #Tmh_btn {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 16px 60px;
+    color: white;
+    font-size: 26px;
+    letter-spacing: 4px;
+    /*margin-top:10px;*/
+    transition: all 0.3s;
+    margin: 10px;
+    display: inline-block;
+}
+
+#Thunder_media_hover #Tmh_btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/*第三段文字*/
+#Thunder_media_hover .Thunder_txt3 {
+    color: white;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    /*padding-left:20px;*/
+    font-size: 20px;
+    border: 1px solid yellow;
+}
+
+#Thunder_media_hover .Thunder_txt3 .txt_zan {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    background: url("images/ic_spr24.png") no-repeat -18px 0;
+    width: 23px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid red;
+    transition: top 0.2s;
+}
+
+#Thunder_media_hover .Thunder_txt3 .txt_zan:hover {
+    background: url("images/ic_spr24.png") no-repeat -200px 0;
+    top: -3px;
+}
+
+/*第二个模块儿*//*第二个模块儿*//*第二个模块儿*//*第二个模块儿*//*第二个模块儿*/
+#change-back-3 #Thunder_gamebox {
+    top: 50%;
+    left: 0;
+    width: 33%;
+    height: 50%;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+/*正面*/
+#Thunder_gamebox #Thunder_gamebox_real {
+    width: 100%;
+    height: 100%;
+}
+
+/*图片区*/
+#Thunder_gamebox #Tg-img-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -190px 0 0 -225px;
+    width: 451px;
+    height: 380px;
+    border: 1px solid cyan;
+}
+
+#Thunder_gamebox #Tg-img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+/*内容区*/
+#Thunder_gamebox .tb_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1920px;
+    height: 1080px;
+    margin: -540px 0 0 -960px;
+    display: table;
+    border: 1px solid red;
+}
+
+#Thunder_gamebox #Tg-content {
+    display: table-cell;
+    padding-bottom: 20px;
+    vertical-align: middle;
+    /*width:100%;*/
+    /*height:105px;*/
+    border: 1px solid green;
+    /*这个东西不显示边框，是不是table-cell的特性*/
+}
+
+#Tg-content .product-logo {
+    position: relative;
+    display: block;
+    height: 105px;
+    border: 1px solid red;
+}
+
+#Tg-content .product-logo #Tg-product-logo {
+    display: block;
+    background: url("images/product_logo.png") no-repeat -78px 0;
+    width: 65px;
+    height: 62px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -31px 0 0 -31px;
+    border: 1px solid red;
+}
+
+#Tg-content .product-txt {
+    display: block;
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    /*margin:0 7px;*/
+    border: 1px solid green;
+}
+
+.product-txt #Tgp-little-img {
+    background: url("images/ic_spr24.png") no-repeat -50px 0;
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    vertical-align: middle;
+    /*align the top of the box with the top of the parent element's font*/
+    /*vertical-align:text-top;*/
+    border: 1px solid yellow;
+}
+
+/*hover面*/
+#Thunder_gamebox #Thunder_gamebox_hover {
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    transition: all 0.3s;
+    /*background:rgba(0,0,0,0.7);*/
+    background: black;
+    border: 1px solid darkgreen;
+}
+
+#Thunder_gamebox:hover #Thunder_gamebox_hover {
+    left: 0;
+    opacity: 0.7;
+}
+
+#Thunder_media_hover .tb_box {
+    width: 1920px;
+    height: 1080px;
+    margin: -540px 0 0 -960px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    display: table;
+}
+
+.tb_box .tb_content {
+    display: table-cell;
+    /*padding-bottom:20px;*/
+    vertical-align: middle;
+}
+
+/*第一段文字*/
+#Thunder_gamebox_hover .Thunder_txt1 {
+    position: relative;
+    display: block;
+    padding-bottom: 20px;
+    border: 1px solid red;
+}
+
+.Thunder_txt1 #Thunderg_txt1_a {
+    display: inline-block;
+    position: relative;
+    padding-right: 25px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    height: 40px;
+    /*overflow: hidden;*/
+    border: 1px solid red;
+}
+
+#Thunderg_txt1_a .little_img {
+    background: url("images/ic_spr24.png") no-repeat -106px 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 0;
+    width: 9px;
+    height: 17px;
+    border: 1px solid red;
+}
+
+#Thunder_gamebox:hover #Tg-content {
+    display: none;
+}
+
+@keyframes lemove {
+    0% {
+        right: 0
+    }
+    25% {
+        right: -8px;
+    }
+    50% {
+        right: 0
+    }
+    75% {
+        right: -2px;
+    }
+    100% {
+        right: 0
+    }
+}
+
+.Thunder_txt1 #Thunderg_txt1_a:hover .little_img {
+    animation: lemove 0.4s 0.4s linear;
+}
+
+/*第二段文字*/
+#Thunder_gamebox_hover .Thunder_txt2 {
+    font-size: 22px;
+    color: white;
+    line-height: 38px;
+    margin: 20px;
+    border: 1px solid blue;
+}
+
+/*按钮*/
+#Thunder_gamebox_hover #Tgh_btn {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 16px 60px;
+    color: white;
+    font-size: 26px;
+    letter-spacing: 4px;
+    /*margin-top:10px;*/
+    transition: all 0.3s;
+    margin: 10px;
+    display: inline-block;
+}
+
+#Thunder_gamebox_hover #Tgh_btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/*第三段文字*/
+#Thunder_gamebox_hover .Thunder_txt3 {
+    color: white;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    /*padding-left:20px;*/
+    font-size: 20px;
+    border: 1px solid yellow;
+}
+
+#Thunder_gamebox_hover .Thunder_txt3 .txt_zan {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    background: url("images/ic_spr24.png") no-repeat -18px 0;
+    width: 23px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid red;
+    transition: top 0.2s;
+}
+
+#Thunder_gamebox_hover .Thunder_txt3 .txt_zan:hover {
+    background: url("images/ic_spr24.png") no-repeat -200px 0;
+    top: -3px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #k2{
+            background:url("images/ic_spr24.png") no-repeat -14px 0;
+        }
+        #k2:hover{
+            background:url("images/ic_spr24.png") no-repeat -200px 0;
+            transform:translateY(-3px);
+            -webkit-transform:translateY(-3px);
+        }
+    </style>
+    <script>
+        window.onload=function() {
+//        function f1(){
+//        　　　　var n=1200;
+//        　　　　function f2(){
+//        　　　　　　alert(n);
+//        　　　　}
+//        　　　　return f2;
+//        　　}
+//            f1()();
+////        　　var result=f1();
+////        　　result(); // 999
+//        };
+            var k = document.getElementsByClassName("txt_show1");
+          alert(k[0].offsetWidth)
+        }
+    </script>
+</head>
+<body>
+<p class="txt_show1" style="width:100px;">
+    <a target="_blank" href="http://xl9.xunlei.com">
+        迅雷9<i class="little_img"></i>
+    </a>
+</p>
+
+<a id="k2" style="width:25px;height:25px;border:1px solid red;display: block;background-color:#666"></a>
+<p style="background: #900; color: #00f; font: bold 12px/24px Helvertica,Arial,sans-serif; height:24px; width:370px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+<br/>
+<br/>
+<p style="background: #090; color: #00f; font: bold 12px/2em Helvertica,Arial,sans-serif; height:2em; width:370px; overflow: hidden;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+<div style="padding-top:100px;padding-bottom:100px;border:1px solid red;">wosf asjof oiguo  oyghasgy  osuadofas,
+shdfhaso  sfyhyg  osiufo  ysygyg</div>
+<!--测试line-height和border的关系-->
+<!--块级元素不指定高度，line-height是在border内的-->
+<div style="border:1px solid red;height:140px;line-height:20px;">拉到过</div>
+<!--测试无宽高父级能不能影响子集定位-->
+<!--事实证明是有影响的，及时父级无宽高-->
+<div style="position:absolute;top:20%;left:20%;border:1px solid red;">
+    <div  style="position:absolute;width:500px;height:500px;border: 1px solid green;top:0;left:0"></div>
+</div>
+<!--测试transform:origin对普通盒子的影响-->
+<!--这个实在没想好怎么测试哎，不过应该是有用的，毕竟屏幕高度改变也算是盒子在变化-->
+<!--测试小箭头-->
+<!--只是试一下，没别的意思-->
+<div style="width:0;height:0;border-width:8px;
+    border-style:solid;
+    border-color:red blue transparent ;"></div>
+</body>
+</html>
